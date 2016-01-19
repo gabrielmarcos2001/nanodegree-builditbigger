@@ -25,18 +25,29 @@
         />
 
     <RelativeLayout
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:id="@+id/tell_joke_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:background="?android:attr/selectableItemBackground"
         android:onClick="tellJoke">
 
+        <!--
         <ImageView
             android:id="@+id/joke_face"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/awesome"
             android:layout_centerInParent="true" />
+
+            -->
+
+        <com.udacity.gradle.builditbigger.ViewGetJokeButton
+            android:id="@+id/joke_face"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            />
 
         <com.pnikosis.materialishprogress.ProgressWheel
             android:id="@+id/loader"

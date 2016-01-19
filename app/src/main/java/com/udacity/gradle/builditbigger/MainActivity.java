@@ -19,9 +19,7 @@ public class MainActivity extends AppCompatActivity implements MainView {
         setContentView(R.layout.activity_main);
 
         if (mPresenter == null) {
-            mPresenter = new MainPresenter(this);
-        }else {
-            mPresenter.setmContext(this);
+            mPresenter = new MainPresenter();
         }
 
         mFragment = (MainActivityFragment)getSupportFragmentManager().findFragmentById(R.id.fragment);
@@ -73,4 +71,6 @@ public class MainActivity extends AppCompatActivity implements MainView {
             mPresenter = null;
         }
     }
+
+
 }
