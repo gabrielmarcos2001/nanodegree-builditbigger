@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Jokes.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/emerland</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/nephritis</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated,
+        which is used to tint widgets -->
+        <item name="colorAccent">@color/sun_flower</item>
+
+    </style>
+
+</resources>
