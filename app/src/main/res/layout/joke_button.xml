@@ -11,24 +11,24 @@
 
         <View
             android:id="@+id/circle_1"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_width="@dimen/ripple_size"
+            android:layout_height="@dimen/ripple_size"
             android:layout_centerInParent="true"
             android:elevation="10dp"
             android:background="@drawable/stroke_circle_1"/>
 
         <View
             android:id="@+id/circle_2"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_width="@dimen/ripple_size"
+            android:layout_height="@dimen/ripple_size"
             android:layout_centerInParent="true"
             android:elevation="10dp"
             android:background="@drawable/stroke_circle_2"/>
 
         <View
             android:id="@+id/circle_3"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_width="@dimen/ripple_size"
+            android:layout_height="@dimen/ripple_size"
             android:layout_centerInParent="true"
             android:elevation="10dp"
             android:background="@drawable/stroke_circle_1"/>
@@ -36,9 +36,9 @@
     </RelativeLayout>
 
     <ImageView
-        android:id="@+id/icon"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:id="@+id/image"
+        android:layout_width="@dimen/button_image_size"
+        android:layout_height="@dimen/button_image_size"
         android:layout_centerInParent="true"
         android:scaleType="fitCenter"
         android:src="@drawable/awesome"/>

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Toast;
 
 import gabilam.com.jokedisplay.JokeActivity;
 
@@ -46,9 +47,18 @@ public class MainActivity extends AppCompatActivity implements MainView {
 
     @Override
     public void displayJoke(String joke) {
-        Intent i = new Intent(this, JokeActivity.class);
-        i.putExtra(JokeActivity.JOKE_KEY,joke);
-        startActivity(i);
+
+        if (joke == null) {
+
+            Toast.makeText(this,getString(R.string.error_server_not_available),Toast.LENGTH_SHORT).show();
+            mFragment.hideLoader();
+
+        }else {
+
+            Intent i = new Intent(this, JokeActivity.class);
+            i.putExtra(JokeActivity.JOKE_KEY, joke);
+            startActivity(i);
+        }
     }
 
     @Override

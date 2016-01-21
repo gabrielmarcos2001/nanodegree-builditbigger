@@ -45,7 +45,6 @@ public class MainPresenter {
                         mLoading = false;
 
                         if (mView != null) {
-                            mView.hideLoader();
                             mView.displayJoke(joke);
                         }
                     }

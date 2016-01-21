@@ -35,7 +35,6 @@ public class ViewGetJokeButton extends RelativeLayout {
     private AnimationSet mCircle3Set;
     private boolean mActive = true;
     private boolean mAnimationsInitialized = false;
-    private ImageView mImageIcon;
 
     public ViewGetJokeButton(Context context) {
         super(context);
@@ -61,7 +60,6 @@ public class ViewGetJokeButton extends RelativeLayout {
         mCircle1 = findViewById(R.id.circle_1);
         mCircle2 = findViewById(R.id.circle_2);
         mCircle3 = findViewById(R.id.circle_3);
-        mImageIcon = (ImageView)findViewById(R.id.icon);
 
         mCircle1.setVisibility(View.GONE);
         mCircle2.setVisibility(View.GONE);
